@@ -5,33 +5,6 @@
     margin-top: 20px;
     box-shadow: 0 2px 4px #c7f7fa;
   }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background-color: #C1ECE4;
-  }
-  
-  nav ul li.active a {
-    background-color: #555;
-  }
 
   .gallery-item img {
     width: 100%;

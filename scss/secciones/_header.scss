@@ -1,13 +1,4 @@
 // HEADER
-
-header {
-    background-color: #C1ECE4;
-    color: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   
   header h1 {
     margin: 0;
@@ -24,4 +15,13 @@ header {
     height: auto;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+
+  header {
+    background-color: #C1ECE4;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }

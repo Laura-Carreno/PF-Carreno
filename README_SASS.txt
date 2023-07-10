@@ -1,3 +1,5 @@
+FIGMA - WIREFRAMES:
+
 //COMO EMPEZAR A COMPILAR SASS//
 
 1. Abrir la consola en esta carpeta con ctrl+ñ
