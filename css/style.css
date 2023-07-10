@@ -116,3 +116,9 @@ nav ul li.active a {
   grid-gap: 20px;
   margin-top: 20px;
   box-shadow: 0 2px 4px #c7f7fa; }
+
+footer {
+  background-color: #fbe1f4;
+  color: #000000;
+  padding: 10px;
+  text-align: center; }
