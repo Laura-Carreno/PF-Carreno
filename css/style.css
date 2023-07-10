@@ -17,9 +17,6 @@ header {
 header h1 {
   margin: 0; }
 
-main {
-  padding: 20px 0; }
-
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -29,6 +26,22 @@ main {
   width: 150px;
   height: auto;
   margin-bottom: 20px;
+  margin-top: 20px; }
+
+main {
+  padding: 20px 0; }
+
+.page-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+
+.about-us {
+  font-size: 16px;
+  line-height: 1.6; }
+
+.contact form {
   margin-top: 20px; }
 
 .gallery-item {
@@ -59,6 +72,11 @@ nav ul li a:hover {
 
 nav ul li.active a {
   background-color: #555; }
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; }
 
 /* Estilos para la sección "Productos" */
 .products {
@@ -98,23 +116,3 @@ nav ul li.active a {
 
 .product .btn:hover {
   background-color: #edc6f1; }
-
-/* Estilos adicionales */
-.page-content {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
-
-/* Estilos específicos para cada página */
-.about-us {
-  font-size: 16px;
-  line-height: 1.6; }
-
-.contact form {
-  margin-top: 20px; }
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px; }

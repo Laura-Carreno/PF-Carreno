@@ -12,3 +12,16 @@ header {
   header h1 {
     margin: 0;
   }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
