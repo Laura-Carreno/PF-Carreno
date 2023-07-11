@@ -5,10 +5,11 @@
   line-height: 1.6;
 }
 
-/* Media query para dispositivos móviles */
-@media (max-width: 767px) {
+/* Media query para dispositivos de escritorio */
+@media (min-width: 768px) {
+  /* Estilos para dispositivos de escritorio */
   .about-us {
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.8;
   }
 }

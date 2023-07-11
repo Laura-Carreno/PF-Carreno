@@ -1,6 +1,7 @@
+/* Estilos para dispositivos móviles */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 20px;
   margin-top: 20px;
   box-shadow: 0 2px 4px #c7f7fa;
@@ -12,9 +13,10 @@
   border-radius: 8px;
 }
 
-/* Media query para dispositivos móviles */
-@media (max-width: 767px) {
+/* Media query para dispositivos de escritorio */
+@media (min-width: 768px) {
+  /* Estilos para dispositivos de escritorio */
   .products {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }

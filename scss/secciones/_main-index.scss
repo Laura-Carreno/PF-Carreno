@@ -25,8 +25,9 @@ nav {
   }
 }
 
-/* Estilos para dispositivos de escritorio */
+/* Media query para dispositivos de escritorio */
 @media (min-width: 768px) {
+  /* Estilos para dispositivos de escritorio */
   nav {
     .menu-toggle {
       display: none;
