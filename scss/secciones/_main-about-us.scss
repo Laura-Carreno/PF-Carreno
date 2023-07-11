@@ -1,4 +1,14 @@
+/* Estilos para dispositivos móviles */
+
 .about-us {
-    font-size: 16px;
-    line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+  .about-us {
+    font-size: 14px;
+    line-height: 1.4;
   }
+}

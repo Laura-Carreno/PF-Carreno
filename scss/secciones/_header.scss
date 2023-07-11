@@ -1,27 +1,42 @@
-// HEADER
-  
-  header h1 {
-    margin: 0;
-  }
+/* Estilos para dispositivos móviles */
 
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 10px;
+/* HEADER */
+
+header h1 {
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+header {
+  background-color: #C1ECE4;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
   }
 
   .logo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
   }
-
-  header {
-    background-color: #C1ECE4;
-    color: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+}

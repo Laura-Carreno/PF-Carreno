@@ -1,6 +1,17 @@
+/* Estilos para dispositivos móviles */
+
+/* Footer */
 footer {
-    background-color: #fbe1f4;
-    color: #000000;
-    padding: 10px;
-    text-align: center;
+  background-color: #fbe1f4;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+  /* Footer */
+  footer {
+    font-size: 14px;
   }
+}
