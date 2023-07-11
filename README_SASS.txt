@@ -1,4 +1,4 @@
-FIGMA - WIREFRAMES:
+FIGMA - WIREFRAMES: https://www.figma.com/file/mnyKsATV9lTUw8rxTzLwf3/prueba-55590?type=design&node-id=0%3A1&t=qzUwhtyx8EPQIVZi-1
 
 //COMO EMPEZAR A COMPILAR SASS//
 
