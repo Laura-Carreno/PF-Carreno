@@ -1,13 +1,13 @@
 /* Estilos para dispositivos móviles */
-
 .contact form {
   margin-top: 20px;
+  transition: margin-top 0.3s;
 }
 
 /* Media query para dispositivos de escritorio */
 @media (min-width: 768px) {
-  /* Estilos para dispositivos de escritorio */
   .contact form {
     margin-top: 30px;
+    transition: margin-top 0.3s;
   }
 }

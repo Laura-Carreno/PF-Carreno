@@ -1,21 +1,55 @@
 /* Estilos para dispositivos móviles */
 .products {
+  margin: 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
   margin-top: 20px;
-  box-shadow: 0 2px 4px #c7f7fa;
+  box-shadow: 0 2px 4px #838586;
 }
 
-.products img {
-  width: 100%;
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product img {
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
+.product h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product p {
+  margin-top: 5px;
+  color: #888;
+}
+
+.product .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #C1ECE4;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  align-items: flex-end;
+}
+
+.product .btn:hover {
+  background-color: #fbe1f4;
+  transform: translateY(-5px);
+}
+
 /* Media query para dispositivos de escritorio */
 @media (min-width: 768px) {
-  /* Estilos para dispositivos de escritorio */
   .products {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }

@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lauttering - Sobre Nosotros</title>
+  <title>Lauttering | Sobre Nosotros</title>
   <meta name="description" content="Descubre quiénes somos y nuestra pasión por el arte del lettering en Lauttering. Conoce nuestra colección de productos exclusivos y únete a nuestros eventos y talleres.">
   <meta name="keywords" content="lettering, arte, tienda, productos, exclusivos, eventos, talleres, Lauttering">
-  <link rel="stylesheet" href="../css/style.css">
+   <!-- Fuentes -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Style+Script&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> 
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../scss/main.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../resources/logo.png" type="image/x-icon">
 </head>
 <body>
   <header>
-    <img class="logo" src="../resources/logo.webp" alt="Logo">
+    <img class="logo slide-in" src="../resources/logo.png" alt="Logo">
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./products.html">Productos</a></li>
         <li><a href="./about.html">Sobre Nosotros</a></li>
@@ -24,7 +33,7 @@
 
   <main>
     <section class="about-us">
-      <h2>Sobre Nosotros</h2>
+      <h2 class="about-h1">Sobre Nosotros</h2>
       <p>Lauttering es una tienda en línea especializada en piezas de arte de lettering. Nos apasiona el arte de las letras y queremos compartirlo contigo. Trabajamos con talentosos artistas del lettering que crean piezas únicas y originales.</p>
 
       <p>En nuestra tienda, encontrarás una amplia variedad de productos, desde cuadros y láminas hasta camisetas y libretas, todos con diseños de lettering exclusivos. Cada pieza está cuidadosamente seleccionada para ofrecerte la mejor calidad y estilo.</p>
@@ -34,7 +43,25 @@
   </main>
 
   <footer>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col d-flex flex-column p-3">
+          <a class="btn btn-light btn-sm m-3" href="#">Home</a>
+          <a class="btn btn-light btn-sm m-3" href="#">Top</a>
+        </div>
+        <div class="col d-flex flex-column p-3">
+          <a class="btn btn-light btn-sm m-3" href="../sections/products.html">Productos</a>
+          <a class="btn btn-light btn-sm m-3" href="../sections/gallery.html">Galería</a>
+        </div>
+        <div class="col d-flex flex-column p-3">
+          <a class="btn btn-light btn-sm m-3" href="./about.html">Nosotros</a>
+          <a class="btn btn-light btn-sm m-3" href="../sections/contact.html">Contacto</a>
+        </div>
+      </div>
+    </div>
     <p>Tienda de Lettering &copy; 2023</p>
   </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
