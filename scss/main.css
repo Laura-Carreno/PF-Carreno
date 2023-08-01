@@ -21,7 +21,7 @@ header h1 {
   height: auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 50px;
+  align-items: center;
 }
 
 header {
@@ -31,6 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 
 @keyframes fadeIn {
@@ -53,7 +54,7 @@ header {
   animation: fadeIn 1s ease-in-out;
   font-family: "Pacifico";
   font-family: "Style Script";
-  color: #b5f4e9;
+  color: rgba(139, 233, 217, 0.7490196078);
   font-size: 100px;
   text-align: center;
 }
@@ -72,9 +73,11 @@ header {
 @media only screen and (max-width: 767px) {
   .logo {
     margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
   }
   .menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -82,14 +85,16 @@ header {
 /* Estilos para dispositivos más grandes */
 @media only screen and (min-width: 768px) {
   .logo {
-    margin-left: 50px;
+    align-items: center;
   }
   nav {
     display: flex;
+    flex-direction: row;
   }
 }
 main {
   padding: 20px 0;
+  min-height: 60vh;
 }
 
 .page-content {
@@ -142,26 +147,30 @@ nav ul li.active a {
 
 /* Estilos para dispositivos móviles */
 .about-us {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 10px;
+  font-size: 15px;
+  line-height: 1.2;
   transition: font-size 0.3s, line-height 0.3s;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
 }
 
 .about-h1 {
   font-size: 100px;
   font-family: "Style Script";
   text-align: center;
-  color: #b5f4e9;
+  color: rgba(138, 223, 209, 0.7490196078);
 }
 
 /* Media query para dispositivos de escritorio */
 @media (min-width: 768px) {
-  /* Estilos para dispositivos de escritorio */
   .about-us {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
     transition: font-size 0.3s, line-height 0.3s;
+    line-height: 2;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 }
 /* Estilos para dispositivos móviles */
@@ -206,9 +215,8 @@ nav ul li.active a {
   margin: 5px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 40px;
   margin-top: 20px;
-  box-shadow: 0 2px 4px #838586;
 }
 
 .product {
@@ -217,6 +225,7 @@ nav ul li.active a {
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: #888;
 }
 
 .product img {
@@ -255,6 +264,8 @@ nav ul li.active a {
 @media (min-width: 768px) {
   .products {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left: 500px;
+    margin-right: 500px;
   }
 }
 /* Estilos para dispositivos móviles */

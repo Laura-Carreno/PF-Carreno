@@ -3,9 +3,8 @@
   margin: 5px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 40px;
   margin-top: 20px;
-  box-shadow: 0 2px 4px #838586;
 }
 
 .product {
@@ -14,6 +13,7 @@
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: #888;
 }
 
 .product img {
@@ -52,5 +52,8 @@
 @media (min-width: 768px) {
   .products {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left: 500px;
+    margin-right: 500px;
+    
   }
 }
