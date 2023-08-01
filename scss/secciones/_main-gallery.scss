@@ -4,7 +4,6 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
   margin-top: 20px;
-  box-shadow: 0 2px 4px #c2c5c6;
   transition: grid-template-columns 0.3s, grid-gap 0.3s, box-shadow 0.3s;
 }
 
