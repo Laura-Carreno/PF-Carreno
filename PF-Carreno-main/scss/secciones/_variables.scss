@@ -1,0 +1,10 @@
+$primary: #b1f5ee;
+$secondary: #fdc8fb;
+
+// Create your own map
+$custom-colors: (
+  "custom-color": #b1f5ee
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

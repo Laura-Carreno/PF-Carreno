@@ -1,0 +1,49 @@
+main {
+  padding: 0px 0;
+  min-height: 60vh;
+}
+
+.page-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.page-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: justify-content 0.3s;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: #3d847d;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #fdeefb;
+  transform: scale(1.1);
+}
+
+nav ul li.active a {
+  background-color: #555;
+}
+
+.título-producto {
+  font-size: 25px;
+  font-family: 'Style Script';
+  color: #000000;
+}

@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+header {
+  background-color: #b5f4e9;
+  color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+  font-family: "Pacifico";
+  font-family: "Style Script";
+  color: rgba(138, 223, 209, 0.7490196078);
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.slide-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.intro-line {
+  animation: fadeIn 2s ease-in-out;
+  text-align: center;
+  text-shadow: #b5f4e9;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  .logo {
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Estilos para dispositivos más grandes */
+@media only screen and (min-width: 768px) {
+  .logo {
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+main {
+  padding: 0px 0;
+  min-height: 60vh;
+}
+
+.page-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.page-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: justify-content 0.3s;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: #3d847d;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #fdeefb;
+  transform: scale(1.1);
+}
+
+nav ul li.active a {
+  background-color: #555;
+}
+
+.título-producto {
+  font-size: 25px;
+  font-family: "Style Script";
+  color: #000000;
+}
+
+/* Estilos para dispositivos móviles */
+.about-us {
+  font-size: 15px;
+  line-height: 1.2;
+  transition: font-size 0.3s, line-height 0.3s;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-h1 {
+  font-size: 100px;
+  font-family: "Style Script";
+  text-align: center;
+  color: rgba(138, 223, 209, 0.7490196078);
+}
+
+/* Media query para dispositivos de escritorio */
+@media (min-width: 768px) {
+  .about-us {
+    font-size: 20px;
+    line-height: 1.8;
+    transition: font-size 0.3s, line-height 0.3s;
+    line-height: 2;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+/* Estilos para dispositivos móviles */
+.contact form.custom-form {
+  margin-top: 20px;
+  transition: margin-top 0.3s;
+}
+.contact form.custom-form .form-group {
+  margin-bottom: 15px;
+}
+.contact form.custom-form label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #87dbe5;
+  margin-bottom: 5px;
+}
+.contact form.custom-form input[type=text],
+.contact form.custom-form input[type=email],
+.contact form.custom-form textarea {
+  padding: 10px;
+  border: 1px solid #87dbe5;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+.contact form.custom-form button.btn-primary {
+  background-color: #a2e4e8;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact form.custom-form button.btn-primary:hover {
+  background-color: #f7e3f8;
+}
+
+/* Media query para dispositivos de escritorio */
+@media (min-width: 768px) {
+  .contact form.custom-form {
+    margin-top: 30px;
+    transition: margin-top 0.3s;
+  }
+}
+/* Estilos para dispositivos móviles */
+.gallery-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+  transition: grid-template-columns 0.3s, grid-gap 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: border-radius 0.3s;
+}
+
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 768px) {
+  .gallery-item {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+}
+/* Estilos para dispositivos móviles */
+.products {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-top: 20px;
+}
+
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: #888;
+  margin-bottom: 50px;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.product p {
+  margin-top: 5px;
+  color: #888;
+}
+
+.product .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #C1ECE4;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  align-items: flex-end;
+}
+
+.product .btn:hover {
+  background-color: #fbe1f4;
+  transform: translateY(-5px);
+}
+
+/* Media query para dispositivos de escritorio */
+@media (min-width: 768px) {
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+/* Estilos para dispositivos móviles */
+footer {
+  background-color: #fbe1f4;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Media query para dispositivos de escritorio */
+@media (min-width: 768px) {
+  /* Footer */
+  footer {
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s, padding 0.5s;
+  }
+}/*# sourceMappingURL=main.css.map */
